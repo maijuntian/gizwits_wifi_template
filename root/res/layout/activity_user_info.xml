@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/text_gray_normal"
+                android:drawableLeft="@mipmap/login_ic_phone"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/text_gray_normal"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <View style="@style/divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_set_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/text_gray_normal"
+                android:drawableLeft="@mipmap/login_ic_password"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/set_pwd" />
+
+            <TextView
+                style="@style/text_gray_normal"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="8dp"
+                android:drawableRight="@mipmap/list_ic_arrow"
+                android:gravity="center_vertical"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <View style="@style/divider_line" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/button_app_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/logout" />
+</RelativeLayout>

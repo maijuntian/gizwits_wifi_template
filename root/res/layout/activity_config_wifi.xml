@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_next"
+        style="@style/button_app_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/next" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_next"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            style="@style/text_xxgray_normal"
+            android:layout_centerInParent="true"
+            android:padding="20dp"
+            android:text="Wi-Fi:" />
+
+        <EditText
+            android:id="@+id/et_wifi_pwd"
+            style="@style/edit_style_black_pwd"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:hint="@string/input_wifi_pwd"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

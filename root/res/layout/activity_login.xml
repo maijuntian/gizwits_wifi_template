@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="80dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/login_logo" />
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/edit_style_black"
+            android:drawableLeft="@mipmap/login_ic_phone"
+            android:drawablePadding="8dp"
+            android:hint="@string/please_input_phone"
+            android:inputType="number" />
+
+        <View style="@style/divider_line" />
+
+        <${packageName}.widget.PasswordEditText
+            android:id="@+id/et_password"
+            style="@style/edit_style_black_pwd"
+            android:drawableLeft="@mipmap/login_ic_password"
+            android:drawablePadding="8dp"
+            android:hint="@string/please_input_pwd" />
+
+        <View style="@style/divider_line" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/button_app_color"
+            android:layout_marginTop="20dp"
+            android:text="@string/login" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/tv_register"
+                style="@style/text_xxgray_default"
+                android:drawableLeft="@mipmap/login_ic_new"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/new_user_register" />
+
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/text_xxgray_default"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/login_ic_forgot"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/forget_pwd" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

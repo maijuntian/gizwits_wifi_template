@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvBaseBarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_bar_selector"
+            android:drawableLeft="@mipmap/nav_ic_back2"
+            android:drawablePadding="2dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/title_bar_margin"
+            android:paddingRight="@dimen/title_bar_margin"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/tvBaseBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_bar_title_font_size"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:id="@+id/tvBaseBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_bar_selector"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/title_bar_margin"
+            android:paddingRight="@dimen/title_bar_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_bar_right_font_size" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_gray"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bggray"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
+

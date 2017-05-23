@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/edit_style_black"
+        android:drawableLeft="@mipmap/login_ic_phone"
+        android:drawablePadding="8dp"
+        android:hint="@string/please_input_phone"
+        android:inputType="number" />
+
+    <View style="@style/divider_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <${packageName}.widget.VerificationTextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/all_circle_trans_orange"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/send_verification_code"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/et_phone_code"
+            style="@style/edit_style_black"
+            android:layout_toLeftOf="@id/tv_get_code"
+            android:drawableLeft="@mipmap/register_ic_message"
+            android:drawablePadding="8dp"
+            android:hint="@string/msg_code"
+            android:inputType="number"
+            android:maxLength="6" />
+
+    </RelativeLayout>
+
+    <View style="@style/divider_line" />
+
+    <${packageName}.widget.PasswordEditText
+        android:id="@+id/et_password"
+        style="@style/edit_style_black_pwd"
+        android:drawableLeft="@mipmap/login_ic_password"
+        android:drawablePadding="8dp"
+        android:hint="@string/please_input_pwd" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        style="@style/button_app_color"
+        android:layout_marginTop="40dp"
+        android:text="@string/register" />
+
+</LinearLayout>

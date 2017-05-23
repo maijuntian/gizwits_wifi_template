@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_device"
+        style="@style/text_black_normal"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/devicelist_ic_device"
+        android:drawablePadding="8dp"
+        android:text="新宝智能慢煮器1"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/list_ic_arrow"/>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/edit_style_black"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:background="@color/white"
+        android:hint="@string/please_input_phone"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_get_code"
+        style="@style/button_app_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/get_sms_verification_code"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

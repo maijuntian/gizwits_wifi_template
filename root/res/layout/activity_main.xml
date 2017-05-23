@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bggray"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvBaseBarLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_bar_selector"
+                android:drawableLeft="@mipmap/menu_ic_user"
+                android:drawablePadding="2dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/title_bar_margin"
+                android:paddingRight="@dimen/title_bar_margin"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tvBaseBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:text="设备控制"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_bar_title_font_size" />
+
+
+            <TextView
+                android:id="@+id/tvBaseBarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/title_bar_selector"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="@dimen/title_bar_margin"
+                android:paddingRight="@dimen/title_bar_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_bar_right_font_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_no_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_alarm"
+                        style="@style/text_xxgray_normal"
+                        android:drawablePadding="15dp"
+                        android:drawableTop="@mipmap/search_ic_none"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_add_device" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/bt_app_color_trans_corners"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:paddingTop="8dp">
+
+                        <TextView
+                            style="@style/text_app_color_normal"
+                            android:drawableLeft="@mipmap/load_btn_ic_refresh"
+                            android:drawablePadding="3dp"
+                            android:text="@string/refresh" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_add_device"
+                    style="@style/text_app_color_normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/load_btn_add"
+                    android:text="@string/add_device" />
+
+            </RelativeLayout>
+
+            <org.xwalk.core.XWalkView
+                android:id="@+id/wv_control"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <include layout="@layout/view_menu_left" />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

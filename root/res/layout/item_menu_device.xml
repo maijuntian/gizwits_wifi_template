@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp">
+
+    <RadioButton
+        android:id="@+id/rb_device"
+        style="@style/text_large"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:button="@drawable/transColor"
+        android:clickable="false"
+        android:drawableRight="@drawable/cb_device_selector"
+        android:text="新宝智能慢煮器"
+        android:textColor="@drawable/text_gray_orange_selector" />
+
+</RelativeLayout>

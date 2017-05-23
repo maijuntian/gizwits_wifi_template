@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_corner_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/configure_ic_device" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            style="@style/text_app_color_normal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/all_circle_ssgray_orange"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/nav_ic_edit"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="新宝智能慢煮器" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete_device"
+        style="@style/button_app_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/delete_device" />
+
+
+    <TextView
+        android:id="@+id/tv_share_device"
+        style="@style/button_app_color"
+        android:layout_above="@id/tv_delete_device"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/share_device" />
+
+</RelativeLayout>

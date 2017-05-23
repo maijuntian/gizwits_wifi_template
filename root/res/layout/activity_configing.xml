@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_configing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            style="@style/text_xxgray_normal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/configure_ic_device"
+            android:gravity="center_horizontal"
+            android:text="@string/device_binding" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            style="@style/text_app_color_large"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/sencond" />
+
+
+        <TextView
+            style="@style/text_xxgray_normal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/waiting" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_config_succ"
+        style="@style/text_xxgray_normal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@mipmap/configure_ic_success"
+        android:gravity="center_horizontal"
+        android:text="@string/config_succ"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_reconfig"
+            style="@style/button_app_color"
+            android:layout_alignParentBottom="true"
+            android:text="@string/reconfig" />
+
+        <TextView
+            style="@style/text_xxgray_default"
+            android:layout_above="@id/tv_reconfig"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/reconfig_alarm" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_config_fail"
+                style="@style/text_xxgray_normal"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/load_none"
+                android:gravity="center_horizontal"
+                android:text="@string/add_failure" />
+
+            <TextView
+                style="@style/text_xxgray_large"
+                android:layout_marginTop="20dp"
+                android:text="@string/config_failure_alarm1" />
+
+            <TextView
+                style="@style/text_xxgray_default"
+                android:layout_marginTop="10dp"
+                android:text="@string/config_failure_alarm2" />
+
+            <TextView
+                style="@style/text_xxgray_default"
+                android:layout_marginTop="10dp"
+                android:text="@string/config_failure_alarm3" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

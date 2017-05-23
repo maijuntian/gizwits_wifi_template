@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="6"
+    name="Gizwits Activity"
+    description="Creates a new login activity, allowing users to optionally sign in with Google+ or enter an email address and password to log in to or register with your application."
+    requireAppTheme="true"
+    minApi="8"
+    minBuildApi="14">
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="APP_ID"
+        name="APP_ID"
+        type="string"
+        constraints="nonempty"
+        default=""
+        help="The APP_ID form gizwits" />
+        
+        
+    <parameter
+        id="APP_SECRET"
+        name="APP_SECRET"
+        type="string"
+        constraints="nonempty"
+        default=""
+        help="The APP_SECRET form gizwits" />
+        
+        
+    <parameter
+        id="PRODUCT_SECRET"
+        name="PRODUCT_SECRET"
+        type="string"
+        constraints="nonempty"
+        default=""
+        help="The PRODUCT_SECRET form gizwits" />
+        
+        
+    <parameter
+        id="PRODUCT_KEY"
+        name="PRODUCT_KEY"
+        type="string"
+        constraints="nonempty"
+        default=""
+        help="The PRODUCT_KEY form gizwits" />
+        
+        
+    <parameter
+        id="Bugly_AppId"
+        name="Bugly_AppId"
+        type="string"
+        constraints="empty"
+        default=""
+        help="The APP_ID form tencent budly" />
+
+    <thumbs>
+        <thumb>template_login_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

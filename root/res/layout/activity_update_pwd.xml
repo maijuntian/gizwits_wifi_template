@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/edit_style_black_pwd"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="@string/please_input_old_pwd"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <View style="@style/divider_line" />
+
+    <EditText
+        android:id="@+id/et_new_pwd1"
+        style="@style/edit_style_black_pwd"
+        android:background="@color/white"
+        android:hint="@string/please_input_new_pwd"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <View style="@style/divider_line" />
+
+    <EditText
+        android:id="@+id/et_new_pwd2"
+        style="@style/edit_style_black_pwd"
+        android:background="@color/white"
+        android:hint="@string/confirm_pwd"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        style="@style/button_app_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/save" />
+
+
+</LinearLayout>

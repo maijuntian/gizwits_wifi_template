@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_start_bind"
+        style="@style/button_app_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/start_bind" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_start_bind"
+        android:padding="30dp"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/configure_img"/>
+
+        <TextView
+            android:id="@+id/tv_config_alarm"
+            style="@style/text_xxgray_normal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="请按下设备按键," />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
